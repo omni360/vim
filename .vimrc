@@ -132,11 +132,11 @@ func SetTitle()
 	else 
 		call setline(1, "/*************************************************************************") 
 		call append(line("."), "	> File Name: ".expand("%")) 
-		call append(line(".")+1, "	> Author: ") 
-		call append(line(".")+2, "	> Mail: ") 
+		call append(line(".")+1, "	> Author: omni360    Hou,Chunlei(BeiJing)") 
+		call append(line(".")+2, "	> Mail: omni360@qq.com") 
 		call append(line(".")+3, "	> Created Time: ".strftime("%c")) 
-		call append(line(".")+4, " ************************************************************************/") 
-		call append(line(".")+5, "")
+		call append(line(".")+4, "      > WebSite: http://omni360.github.io") 
+		call append(line(".")+5, " ************************************************************************/") 
 	endif
 	if &filetype == 'cpp'
 		call append(line(".")+6, "#include<iostream>")
@@ -466,9 +466,9 @@ Bundle 'Django-Projects'
 "Bundle 'djangojump'
 " ...
 
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "garbas/vim-snipmate"
+"Bundle "MarcWeber/vim-addon-mw-utils"
+"Bundle "tomtom/tlib_vim"
+"Bundle "garbas/vim-snipmate"
 
 " Optional:
 Bundle "honza/vim-snippets"
