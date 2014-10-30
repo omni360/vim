@@ -277,13 +277,13 @@ autocmd FileType c,cpp map <buffer> <leader><space> :w<cr>:make<cr>
 "代码补全 
 set completeopt=preview,menu 
 "允许插件  
-"filetype plugin on
+filetype plugin on
 "共享剪贴板  
-"set clipboard+=unnamed 
+set clipboard+=unnamed 
 "自动保存
 set autowrite
-"set ruler                   " 打开状态栏标尺
-"set cursorline              " 突出显示当前行
+set ruler                   " 打开状态栏标尺
+set cursorline              " 突出显示当前行
 set magic                   " 设置魔术
 set guioptions-=T           " 隐藏工具栏
 set guioptions-=m           " 隐藏菜单栏
@@ -353,12 +353,12 @@ let Tlist_Sort_Type = "name"    " 按照名称排序
 let Tlist_Use_Right_Window = 1  " 在右侧显示窗口  
 let Tlist_Compart_Format = 1    " 压缩方式  
 let Tlist_Exist_OnlyWindow = 1  " 如果只有一个buffer，kill窗口也kill掉buffer  
-""let Tlist_File_Fold_Auto_Close = 0  " 不要关闭其他文件的tags  
-""let Tlist_Enable_Fold_Column = 0    " 不要显示折叠树  
+let Tlist_File_Fold_Auto_Close = 0  " 不要关闭其他文件的tags  
+"let Tlist_Enable_Fold_Column = 0    " 不要显示折叠树  
 "let Tlist_Show_One_File=1            "不同时显示多个文件的tag，只显示当前文件的
 "设置tags  
-"set tags=tags  
-"set autochdir 
+set tags=tags  
+set autochdir 
 
 
 
@@ -449,8 +449,8 @@ Bundle 'synmark.vim'
 "Bundle 'Python-mode-klen'
 Bundle 'SQLComplete.vim'
 Bundle 'Javascript-OmniCompletion-with-YUI-and-j'
-"Bundle 'JavaScript-Indent'
-"Bundle 'Better-Javascript-Indentation'
+Bundle 'JavaScript-Indent'
+Bundle 'Better-Javascript-Indentation'
 Bundle 'jslint.vim'
 Bundle "pangloss/vim-javascript"
 Bundle 'Vim-Script-Updater'
@@ -466,12 +466,12 @@ Bundle 'Django-Projects'
 "Bundle 'djangojump'
 " ...
 
-"Bundle "MarcWeber/vim-addon-mw-utils"
-"Bundle "tomtom/tlib_vim"
-"Bundle "garbas/vim-snipmate"
+"Bundle 'MarcWeber/vim-addon-mw-utils'
+"Bundle 'tomtom/tlib_vim'
+"Bundle 'garbas/vim-snipmate'
 
 " Optional:
-Bundle "honza/vim-snippets"
+Bundle 'honza/vim-snippets'
 
 let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
