@@ -23,9 +23,9 @@ mv -f ~/vim ~/.vim
 mv -f ~/.vimrc ~/.vimrc_old
 mv -f ~/.vim/.vimrc ~/
 git clone https://github.com/gmarik/vundle.vim.git ~/.vim/bundle/vundle
-echo "ma6174正在努力为您安装bundle程序" > ma6174
-echo "安装完毕将自动退出" >> ma6174
-echo "请耐心等待" >> ma6174
-vim ma6174 -c "BundleInstall" -c "q" -c "q"
-rm ma6174
+echo "omni360正在努力为您安装bundle程序" > omni360
+echo "安装完毕将自动退出" >> omni360
+echo "请耐心等待" >> omni360
+vim omni360 -c "BundleInstall" -c "q" -c "q"
+rm omni360
 echo "安装完成"
